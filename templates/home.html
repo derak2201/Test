@@ -6,6 +6,26 @@
 </head>
 <body>
 <h2><center>Caleculator Application</center></h2>
-
+<form action="/homesubmit" method="POST">
+    <table>
+        <tr>
+            <td><label for="num1">Enter First Number </label></td>
+            <td><input type="text" id="num1" name="num1"></td>
+        </tr>
+        <tr>
+            <td><label for="num2">Enter Second Number </label></td>
+            <td><input type="text" id="num2" name="num2"></td>
+        </tr>
+        <tr>
+            <td><label for="opt">Choose Operation </label></td>
+            <td><select name="opt" id="opt">
+                <option value="add">Adition</option>
+                <option value="sub">Subtraction</option></select></td>
+        </tr>
+        <td>
+            <input type="submit">
+        </td>
+    </table>
+</form>
 </body>
 </html>
