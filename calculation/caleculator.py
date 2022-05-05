@@ -10,5 +10,8 @@ class flask_cal:
     def caleculation(self,opt,num1,num2):
         if opt=='add':
             res = num2+num1
-        self.my_file.write(self.msg)
+        if opt =='sub':
+            res = num2-num1
+        self.log.logger(self.my_file,self.msg)
+
         return res

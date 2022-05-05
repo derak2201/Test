@@ -7,3 +7,4 @@ class log_log:
         self.msg = message
         self.date = datetime.today()
         file_name.write(message+str(self.date))
+        file_name.write('\n')
